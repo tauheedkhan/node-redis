@@ -1,0 +1,21 @@
+{
+  "name": "node-redis",
+  "version": "1.0.0",
+  "description": "sample nodejs redis app",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app"
+  },
+  "author": "tauheed khan",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.0",
+    "method-override": "^3.0.0",
+    "redis": "^2.8.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.6"
+  }
+}
