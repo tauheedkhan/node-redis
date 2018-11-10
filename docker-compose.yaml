@@ -1,0 +1,15 @@
+version: '3'
+services:
+  app:
+    build: .
+    depends_on:
+      - redis
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
+    command: npm run start
+    ports:
+      - '3000:3000'
+  redis:
+    image: redis
+    

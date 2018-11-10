@@ -4,7 +4,13 @@ const bodyParser = require('body-parser');
 const methodOverride = require('method-override');
 const redis = require('redis');
 
-const client = redis.createClient();
+const options = {
+    host: 'redis',
+    port: 6379,
+    logErrors: true
+  };
+
+const client = redis.createClient(options);
 
 client.on('connect', () => {
     console.log('Connected to redis...')
